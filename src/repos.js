@@ -54,23 +54,23 @@ class Repo extends Component {
        
         if (repos) {
             repos = repos.map((repo, index) => {
-                // console.log(repo)
                 return (
-                   // console.log()
-                        <div>
-                        <span className='card col-xs-12 col-sm-4 col-md-4' style ={randomColor}>
+                        <div class='center-block'>
+                        <span className='col-xs-12 col-sm-6 col-md-4' >
+                            <div className='card' style ={randomColor}>
                             <span key={index}>
-                            <img src={repo.owner.avatar_url} alt="" width='250' height='250'/>
+                                  <span className='repo'>
+                                   <h1 className='fa fa-pencil'>{repo.name}</h1>
+                                </span>
+                                <br/>
+                            <img src={repo.owner.avatar_url} class='center-block' alt="" width='300' height='300'/>
                             <span className='info container'>
                                 <span className='language'>
                                     <i className='fa fa-flag'>{repo.language}</i>
                                 </span><br/>
-                                <span className='repo'>
-                                    <i className='fa fa-code'>{repo.name}</i>
-                                </span>
-                                <br/>
-                                <span className='owner'>
-                                    <a href={repo.owner.url} target='_blank' className='fa fa-external-link'>{repo.owner.url}</a>
+                              
+                                <span className='link'>
+                                    <a href={repo.html_url} target='_blank' className='fa fa-external-link link'>{repo.html_url} </a>
                                 </span>
                                 <br/>
                                 <span className='star'>
@@ -81,6 +81,7 @@ class Repo extends Component {
                                 </span><br/>
                              </span>
                             </span>
+                            </div>
                         </span>
                      </div>
                 );
@@ -88,7 +89,6 @@ class Repo extends Component {
         }
         return (
             <div>
-             <span> Search Results for {this.props.searchTerm}</span>
             <div>{repos}</div>
             </div>
         )
