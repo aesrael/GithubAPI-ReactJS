@@ -3,17 +3,6 @@ import './App.css';
 
 class Search extends Component {
 
-handleSubmit(e) {
-  e.preventdefault();
-  let url = `https://api.github.com/search/repositories?q=topic:${topic}+topic:javascript&sort=stars&order=desc`
-  fetch(url).then(function (data) {
-    return data.json
-  }).then(json => {
-      this.setState({repo: json})
-    })
-this.refs.newitem.value = null
-}
-
   render() {
     return (
       <div>
