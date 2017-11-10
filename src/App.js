@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Repo from './repos';
 //import Search from './search';
-import './App.css';
 //import '/ bootstrap / dist / css / bootstrap.min.css ';
 
 
