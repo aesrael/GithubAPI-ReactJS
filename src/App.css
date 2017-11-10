@@ -1,67 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+color{
+	color:#9EF05C;
+	color:#EE6CEC;
+	color:#2ED9C0;
+	color:#F3E895;
+	color:#96CBFE;
+	color:#3273DB
+	#D0021B
+	#FFDB4A
+	#FF2B56
+	#FFFFFF
+	#247BE6
+	#F6A617
+	#FFDD57
+	#DCE35B
+	#74C44F
+}
+html,
 body {
-  padding: 50px;
-  background-color: #1ABC9C;
-  font-family: sans-serif;
-}
-#container {
-  display: flex;
-  justify-content: center;
-}
-.todoListMain .header input {
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  height: 100%;
+  background: #1abc9c;
+  color: #fff;
   font-size: 16px;
-  border: 2px solid #FFF;
-  width: 165px;
+  background: -moz-linear-gradient(top,  #1abc9c 0%, #74C44F 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #74C44F), color-stop(100%, #00659b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,#1abc9c 0%, #74C44F 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #1abc9c 0%, #D0021B 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #1abc9c 0%, #F6A617 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom,#1abc9c 0%,  #188A73  50% , #74C44F 100%);
+  /* W3C */
 }
-.todoListMain .header button {
-  padding: 10px;
-  font-size: 16px;
-  margin: 10px;
-  margin-right: 0px;
-  background-color: #0066FF;
-  color: #FFF;
-  border: 2px solid #0066FF;
+.title{
+  font-size:50px;
+  font-family: tahoma;
 }
-.todoListMain .header button:hover {
-  background-color: #1ABC9C;
-  border: 2px solid #1ABC9C;
-  cursor: pointer;
-}
-.todoListMain .theList {
-  list-style: none;
-  padding-left: 0;
-  width: 250px;
-} 
-.todoListMain .theList li {
-  color: #333;
-  background-color: rgba(255,255,255,.5);
-  padding: 15px;
-  margin-bottom: 15px;
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
   border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
 }
-.todoListMain .theList li {
-  color: #333;
-  background-color: rgba(255,255,255,.5);
-  padding: 15px;
-  margin-bottom: 15px;
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
   border-radius: 5px;
-  width:500px;
- 
-  transition: background-color .2s ease-out;
-}
- 
-.todoListMain .theList li:hover {
-  background-color: #A1B698;
   cursor: pointer;
+  font-size: 20px;
 }
-a{
-  position: relative;
-  left:450px;
-  top:-50px;
-  font-size:1.2em;
-  color:red;
-  cursor:pointer;
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
 }
-#input{
-  width:400px
+.card{
+	height:auto;
+  width:100px;
+ 
+	/*background-color:#EE6CEC; */
 }
+
