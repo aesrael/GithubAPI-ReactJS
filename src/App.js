@@ -42,7 +42,7 @@ let topic= this.refs.search.value
   render() {
 
     return (
-      <div>
+      <div className='body'>
         <div className='container body'>
           <h1 className='title col-md-12 col-sm-12 col-xs-12'>
             <i className='title-github'>Github</i>
