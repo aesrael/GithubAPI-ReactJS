@@ -44,7 +44,7 @@ let topic= this.refs.search.value
     return (
       <div className='body'>
         <div className='container body'>
-          <h1 className='title'>
+          <h1 className='title col-md-12 col-sm-12 col-xs-12'>
             <i className='title-github'>Github</i>
             <i className='title-search'>
               Search</i>
